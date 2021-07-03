@@ -1,75 +1,73 @@
-<!DOCTYPE html>
-<html  lang="en">
-<head>
-  <!-- Site made with Mobirise Website Builder v5.3.10, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.3.10, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo5.png" type="image/x-icon">
-  <meta name="description" content="">
-  
-  
-  <title>Home</title>
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
-  
-</head>
-<body>
-  
-  <section class="countdown4 cid-sC8YNfNupV mbr-fullscreen mbr-parallax-background" id="countdown4-3">
-    
-    
-    <div class="container">
+<section class="countdown4" group="Countdowns" plugins="countdown" data-bg-video="{{bg.type == 'video' && bg.value.url}}" mbr-class="{
+        'mbr-fullscreen': fullScreen,
+        'mbr-parallax-background': bg.parallax}">
+    <mbr-parameters>
+        <header>Size</header>
+        <input type="checkbox" title="Full Screen" name="fullScreen" checked>
+        <input type="checkbox" title="Full Width" name="fullWidth">
+        <input type="range" inline title="Top" name="paddingTop" min="0" max="10" step="1" value="5" condition="fullScreen == false">
+        <input type="range" inline title="Bottom" name="paddingBottom" min="0" max="10" step="1" value="5" condition="fullScreen == false">
+        <header>Show/Hide</header>
+        <input type="checkbox" title="Title" name="showTitle" checked>
+        <input type="checkbox" title="Subtitle" name="showSubtitle">
+        <input type="checkbox" title="Text" name="showText" checked>
+        <input type="checkbox" title="Button" name="showButtons">
+        <input type="range" title="Social Icons" name="socialAmount" min="0" max="8" step="1" value="0">
+        <header>Settings</header>
+        <input type="text" title="Countdown" name="countdown" value="2021/07/05">
+        <input type="text" inline title="Days" name="daysCountdown" value="Days">
+        <input type="text" inline title="Hours" name="hoursCountdown" value="Hours">
+        <input type="text" inline title="Minutes" name="minutesCountdown" value="Minutes">
+        <input type="text" inline title="Seconds" name="secondsCountdown" value="Seconds">
+        <input type="color" title="Numbers Color" name="numbersColor" value="#ffffff">
+        <input type="color" title="Labels Color" name="labelsColor" value="#ffffff">
+        <input type="color" title="Icons Color" name="socialIconColor" value="#ffffff">
+        <header>Background</header>
+        <fieldset type="background" name="bg" parallax>
+            <input type="image" title="Image" value="file:///E:/UPDATE%201.0/website/update%201.0/assets/images/capture-2000x1233.png" selected parallax>
+            <input type="color" title="Color" value="#4479d9">
+            <input type="video" title="Video" value="https://vimeo.com/428046504">
+        </fieldset>
+        <input type="checkbox" title="Overlay" name="overlay" condition="bg.type !== 'color'">
+        <input type="color" title="Overlay Color" name="overlayColor" value="#4479d9" condition="overlay && bg.type !== 'color'">
+        <input type="range" inline title="Opacity" name="overlayOpacity" min="0" max="1" step="0.1" value="0" condition="overlay && bg.type !== 'color'">
+    </mbr-parameters>
+    <div class="mbr-overlay" mbr-if="overlay && bg.type!== 'color'" mbr-style="{'opacity': overlayOpacity, 'background-color': overlayColor}">
+    </div>
+    <div mbr-class="{'container': !fullWidth, 'container-fluid': fullWidth}">
         <div class="row justify-content-center">
             <div class="col-lg-8">
-                <h3 class="mbr-section-title mb-5 align-center mbr-fonts-style display-2">
-                    <strong>Coming Soon</strong>
+                <h3 class="mbr-section-title mb-5 align-center mbr-fonts-style" mbr-theme-style="display-2" mbr-if="showTitle">
+                    <b>Coming Soon</b>
                 </h3>
-                
+                <h4 class="mbr-section-subtitle mb-5 align-center mbr-fonts-style" mbr-theme-style="display-7" mbr-if="showSubtitle" data-app-selector=".mbr-section-subtitle">
+                    Use this block as a countdown for your project if it's not ready yet.
+                </h4>
                 <div class="countdown-cont align-center mb-5">
-                    <div class="daysCountdown col-xs-3 col-sm-3 col-md-3" title="Days"></div>
-                    <div class="hoursCountdown col-xs-3 col-sm-3 col-md-3" title="Hours"></div>
-                    <div class="minutesCountdown col-xs-3 col-sm-3 col-md-3" title="Minutes"></div>
-                    <div class="secondsCountdown col-xs-3 col-sm-3 col-md-3" title="Seconds"></div>
-                    <div class="countdown" data-due-date="2021/07/05"></div>
+                    <div title="{{daysCountdown}}" class="daysCountdown col-xs-3 col-sm-3 col-md-3"></div>
+                    <div title="{{hoursCountdown}}" class="hoursCountdown col-xs-3 col-sm-3 col-md-3"></div>
+                    <div title="{{minutesCountdown}}" class="minutesCountdown col-xs-3 col-sm-3 col-md-3"></div>
+                    <div title="{{secondsCountdown}}" class="secondsCountdown col-xs-3 col-sm-3 col-md-3"></div>
+                    <div class="countdown" data-due-date="{{countdown}}"></div>
                 </div>
-                <p class="mbr-text mb-5 align-center mbr-fonts-style display-7">
+                <p class="mbr-text mb-5 align-center mbr-fonts-style" mbr-theme-style="display-7" mbr-if="showText" data-app-selector=".mbr-text, .mbr-section-btn">
                     Version 1 will be coming out July 5th 2021</p>
-                
-                
+                <div class="icons-menu row justify-content-center display-7" mbr-if="socialAmount > 0" mbr-list="" mbr-list-grow="socialAmount">
+                    <div class="soc-item col-auto">
+                        <a href="https://instagram.com/mobirise" target="_blank" class="social__link">
+                            <span mbr-icon class="mbr-iconfont socicon-instagram socicon"></span>
+                        </a>
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div mbr-if="showButtons" mbr-buttons mbr-theme-style="display-4" class="mbr-section-btn align-center mt-5">
+                    <a class="btn btn-danger" href="https://mobiri.se/" data-app-placeholder="Type Text">
+                        Contact Us
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
-
-<section class="footer7 cid-sC90L46WaT" once="footers" id="footer7-4">
-
-    
-
-    
-
-    <div class="container">
-        <div class="media-container-row align-center mbr-white">
-            <div class="col-12">
-                <p class="mbr-text mb-0 mbr-fonts-style display-7">
-                    © Copyright 2021 MSRPRoleplay - All Rights Reserved
-                </p>
-            </div>
-        </div>
-    </div>
-<script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/countdown/jquery.countdown.min.js"></script>  <script src="assets/parallax/jarallax.min.js"></script>  <script src="assets/theme/js/script.js"></script>  
-  
-  
-</body>
-</html>
