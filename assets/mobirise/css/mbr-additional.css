@@ -958,6 +958,11 @@ section.lazy-placeholder:after {
 .cid-sCcix7Scn2 .collapsed .navbar-collapse.show .navbar-buttons:last-child {
   margin-bottom: 1rem;
 }
+@media (min-width: 1024px) {
+  .cid-sCcix7Scn2 .collapsed:not(.navbar-short) .navbar-collapse {
+    max-height: calc(98.5vh - 3.8rem);
+  }
+}
 .cid-sCcix7Scn2 .collapsed button.navbar-toggler {
   display: block;
 }
@@ -1368,6 +1373,11 @@ section.lazy-placeholder:after {
 .cid-sCcix7Scn2 .collapsed .navbar-collapse.show .navbar-buttons:last-child {
   margin-bottom: 1rem;
 }
+@media (min-width: 1024px) {
+  .cid-sCcix7Scn2 .collapsed:not(.navbar-short) .navbar-collapse {
+    max-height: calc(98.5vh - 3.8rem);
+  }
+}
 .cid-sCcix7Scn2 .collapsed button.navbar-toggler {
   display: block;
 }
@@ -1761,6 +1771,11 @@ section.lazy-placeholder:after {
 .cid-sCcix7Scn2 .collapsed .navbar-collapse.collapsing .navbar-buttons:last-child,
 .cid-sCcix7Scn2 .collapsed .navbar-collapse.show .navbar-buttons:last-child {
   margin-bottom: 1rem;
+}
+@media (min-width: 1024px) {
+  .cid-sCcix7Scn2 .collapsed:not(.navbar-short) .navbar-collapse {
+    max-height: calc(98.5vh - 3.8rem);
+  }
 }
 .cid-sCcix7Scn2 .collapsed button.navbar-toggler {
   display: block;
@@ -2256,6 +2271,11 @@ section.lazy-placeholder:after {
 .cid-sCcix7Scn2 .collapsed .navbar-collapse.show .navbar-buttons:last-child {
   margin-bottom: 1rem;
 }
+@media (min-width: 1024px) {
+  .cid-sCcix7Scn2 .collapsed:not(.navbar-short) .navbar-collapse {
+    max-height: calc(98.5vh - 3.8rem);
+  }
+}
 .cid-sCcix7Scn2 .collapsed button.navbar-toggler {
   display: block;
 }
@@ -2673,6 +2693,11 @@ section.lazy-placeholder:after {
 .cid-sCcix7Scn2 .collapsed .navbar-collapse.show .navbar-buttons:last-child {
   margin-bottom: 1rem;
 }
+@media (min-width: 1024px) {
+  .cid-sCcix7Scn2 .collapsed:not(.navbar-short) .navbar-collapse {
+    max-height: calc(98.5vh - 3.8rem);
+  }
+}
 .cid-sCcix7Scn2 .collapsed button.navbar-toggler {
   display: block;
 }
@@ -3082,6 +3107,11 @@ section.lazy-placeholder:after {
 .cid-sCcix7Scn2 .collapsed .navbar-collapse.collapsing .navbar-buttons:last-child,
 .cid-sCcix7Scn2 .collapsed .navbar-collapse.show .navbar-buttons:last-child {
   margin-bottom: 1rem;
+}
+@media (min-width: 1024px) {
+  .cid-sCcix7Scn2 .collapsed:not(.navbar-short) .navbar-collapse {
+    max-height: calc(98.5vh - 3.8rem);
+  }
 }
 .cid-sCcix7Scn2 .collapsed button.navbar-toggler {
   display: block;
