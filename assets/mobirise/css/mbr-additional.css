@@ -704,21 +704,8 @@ iframe.lazy-placeholder,
 section.lazy-placeholder:after {
   opacity: 0.3;
 }
-.cid-rAhGsdPhVW {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background: linear-gradient(45deg, #03bdfc, #ef04fc);
-}
-.cid-rAhGsdPhVW .mbr-section-subtitle {
-  font-style: italic;
-  letter-spacing: 1rem;
-}
-.cid-rAhGsdPhVW .mbr-text,
-.cid-rAhGsdPhVW .mbr-section-btn {
-  text-align: center;
-}
-.cid-rAhGsdPhVW P {
-  text-align: center;
+.cid-sCjhxqVx0p {
+  background-image: linear-gradient(50deg, #d200fa 10%, #03bdfc 100%) !important;
 }
 .cid-sC97Afy7DI {
   padding-top: 30px;
